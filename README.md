@@ -1,2 +1,7 @@
-# Project-1
-Uncover whether the effects of COVID-19 has changed the migration/geographical mobility patterns of the US population. 
+Project 1
+
+By: Jason Sheridan, Anna Sours, Jenni Davis, Austin Olea, & Mark Blankenship
+
+Hypothesis: 
+
+Home values will increase in counties surrounding counties with major cities that have higher rates of Covid-19 cases.
