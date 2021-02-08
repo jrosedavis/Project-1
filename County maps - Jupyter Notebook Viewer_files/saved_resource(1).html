@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!-- saved from url=(0121)https://nbviewer.jupyter.org/github/jrosedavis/Project-1/blob/main/Analysis%204%20-%20County%20maps%20with%20folium.ipynb -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+    
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="./leaflet.js.download"></script>
+    <script src="./jquery-1.12.4.min.js.download"></script>
+    <script src="./bootstrap.min.js(1).download"></script>
+    <script src="./leaflet.awesome-markers.js.download"></script>
+    <link rel="stylesheet" href="./leaflet.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./font-awesome.min.css">
+    <link rel="stylesheet" href="./leaflet.awesome-markers.css">
+    <link rel="stylesheet" href="./leaflet.awesome.rotate.min.css">
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+            <style>
+                #map_e4478e14186a49469105f51d077eeb5d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map leaflet-container leaflet-fade-anim leaflet-grab leaflet-touch-drag" id="map_e4478e14186a49469105f51d077eeb5d" tabindex="0"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="./206.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(384px, 137px, 0px); opacity: 1;"><img alt="" role="presentation" src="./205.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(384px, -119px, 0px); opacity: 1;"><img alt="" role="presentation" src="./206(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(128px, 137px, 0px); opacity: 1;"><img alt="" role="presentation" src="./206(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(640px, 137px, 0px); opacity: 1;"><img alt="" role="presentation" src="./207.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(384px, 393px, 0px); opacity: 1;"><img alt="" role="presentation" src="./205(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(128px, -119px, 0px); opacity: 1;"><img alt="" role="presentation" src="./205(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(640px, -119px, 0px); opacity: 1;"><img alt="" role="presentation" src="./207(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(128px, 393px, 0px); opacity: 1;"><img alt="" role="presentation" src="./207(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(640px, 393px, 0px); opacity: 1;"><img alt="" role="presentation" src="./206(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-128px, 137px, 0px); opacity: 1;"><img alt="" role="presentation" src="./206(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(896px, 137px, 0px); opacity: 1;"><img alt="" role="presentation" src="./205(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-128px, -119px, 0px); opacity: 1;"><img alt="" role="presentation" src="./205(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(896px, -119px, 0px); opacity: 1;"><img alt="" role="presentation" src="./207(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-128px, 393px, 0px); opacity: 1;"><img alt="" role="presentation" src="./207(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(896px, 393px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"><img src="./marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(115px, 305px, 0px);"><img src="./marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(181px, 97px, 0px);"><img src="./marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(344px, 101px, 0px);"><img src="./marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(516px, 110px, 0px);"><img src="./marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(246px, 478px, 0px);"><img src="./marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(516px, 448px, 0px);"><img src="./marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(654px, 314px, 0px);"><img src="./marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(599px, 231px, 0px);"><img src="./marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(479px, 288px, 0px);"><img src="./marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(268px, 292px, 0px);"></div><div class="leaflet-pane leaflet-overlay-pane"><svg pointer-events="none" class="leaflet-zoom-animated" width="1151" height="690" viewBox="-96 -57 1151 690" style="transform: translate3d(-96px, -57px, 0px);"><g><path class="leaflet-interactive" stroke="#3388ff" stroke-opacity="1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="crimson" fill-opacity="0.2" fill-rule="evenodd" d="M379,288a100,100 0 1,0 200,0 a100,100 0 1,0 -200,0 "></path><path class="leaflet-interactive" stroke="#3388ff" stroke-opacity="1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="crimson" fill-opacity="0.2" fill-rule="evenodd" d="M168,292a100,100 0 1,0 200,0 a100,100 0 1,0 -200,0 "></path></g></svg></div><div class="leaflet-pane leaflet-marker-pane"><img src="./marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(115px, 305px, 0px); z-index: 305;"><img src="./marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(181px, 97px, 0px); z-index: 97;"><img src="./marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(344px, 101px, 0px); z-index: 101;"><img src="./marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(516px, 110px, 0px); z-index: 110;"><img src="./marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(246px, 478px, 0px); z-index: 478;"><img src="./marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(516px, 448px, 0px); z-index: 448;"><img src="./marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(654px, 314px, 0px); z-index: 314;"><img src="./marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(599px, 231px, 0px); z-index: 231;"><img src="./marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(479px, 288px, 0px); z-index: 288;"><img src="./marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(268px, 292px, 0px); z-index: 292;"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="https://nbviewer.jupyter.org/github/jrosedavis/Project-1/blob/main/Analysis%204%20-%20County%20maps%20with%20folium.ipynb#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="https://nbviewer.jupyter.org/github/jrosedavis/Project-1/blob/main/Analysis%204%20-%20County%20maps%20with%20folium.ipynb#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com/" title="A JS library for interactive maps">Leaflet</a> | Data by © <a href="http://openstreetmap.org/">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.</div></div></div></div>
+        
+
+<script>    
+    
+            var map_e4478e14186a49469105f51d077eeb5d = L.map(
+                "map_e4478e14186a49469105f51d077eeb5d",
+                {
+                    center: [32.79, -96.77],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_53ea9f3289c74157850f6f436f965eb6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e4478e14186a49469105f51d077eeb5d);
+        
+    
+            var circle_marker_e892db6866cb4da899a95f0b0365954d = L.circleMarker(
+                [32.79, -96.77],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_e4478e14186a49469105f51d077eeb5d);
+        
+    
+            var circle_marker_96404156d3754919885d9c09c3211c3b = L.circleMarker(
+                [32.78, -97.35],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_e4478e14186a49469105f51d077eeb5d);
+        
+    
+            var marker_ab3f22c9609d4a63b9ff0750942010c3 = L.marker(
+                [32.75, -97.77],
+                {}
+            ).addTo(map_e4478e14186a49469105f51d077eeb5d);
+        
+    
+        var popup_8146b96cefa8499abc8662de951d4f18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0f191fc716c49d189a0530ae03064e6 = $(`<div id="html_e0f191fc716c49d189a0530ae03064e6" style="width: 100.0%; height: 100.0%;">Parker County. Cases: 12600</div>`)[0];
+            popup_8146b96cefa8499abc8662de951d4f18.setContent(html_e0f191fc716c49d189a0530ae03064e6);
+        
+
+        marker_ab3f22c9609d4a63b9ff0750942010c3.bindPopup(popup_8146b96cefa8499abc8662de951d4f18)
+        ;
+
+        
+    
+    
+            var marker_e7a9ff85a6d74241bd33a8b7701316a0 = L.marker(
+                [33.23, -97.59],
+                {}
+            ).addTo(map_e4478e14186a49469105f51d077eeb5d);
+        
+    
+        var popup_782b5a94293e4b4ba6f60a4b739a05b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c80a9b2c8ec24b2fa1616401e5812df4 = $(`<div id="html_c80a9b2c8ec24b2fa1616401e5812df4" style="width: 100.0%; height: 100.0%;">Wise County. Cases: 5994</div>`)[0];
+            popup_782b5a94293e4b4ba6f60a4b739a05b6.setContent(html_c80a9b2c8ec24b2fa1616401e5812df4);
+        
+
+        marker_e7a9ff85a6d74241bd33a8b7701316a0.bindPopup(popup_782b5a94293e4b4ba6f60a4b739a05b6)
+        ;
+
+        
+    
+    
+            var marker_8ed312439ed84cf3b887202e7bfaaada = L.marker(
+                [33.22, -97.14],
+                {}
+            ).addTo(map_e4478e14186a49469105f51d077eeb5d);
+        
+    
+        var popup_7e89505d4de2430a8e97314f10ead67a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ed4f7aa58974c9981092d4e5b2da66f = $(`<div id="html_3ed4f7aa58974c9981092d4e5b2da66f" style="width: 100.0%; height: 100.0%;">Denton County. Cases: 51857</div>`)[0];
+            popup_7e89505d4de2430a8e97314f10ead67a.setContent(html_3ed4f7aa58974c9981092d4e5b2da66f);
+        
+
+        marker_8ed312439ed84cf3b887202e7bfaaada.bindPopup(popup_7e89505d4de2430a8e97314f10ead67a)
+        ;
+
+        
+    
+    
+            var marker_b5867e5a95b0491893eece351a2d3150 = L.marker(
+                [33.2, -96.67],
+                {}
+            ).addTo(map_e4478e14186a49469105f51d077eeb5d);
+        
+    
+        var popup_eadf0bef7d504689823a3bb58b17df6f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbc62ad0583e4911b5ccbd7c44671c48 = $(`<div id="html_bbc62ad0583e4911b5ccbd7c44671c48" style="width: 100.0%; height: 100.0%;">Collin County. Cases: 70414</div>`)[0];
+            popup_eadf0bef7d504689823a3bb58b17df6f.setContent(html_bbc62ad0583e4911b5ccbd7c44671c48);
+        
+
+        marker_b5867e5a95b0491893eece351a2d3150.bindPopup(popup_eadf0bef7d504689823a3bb58b17df6f)
+        ;
+
+        
+    
+    
+            var marker_d18d14b50ef24ce68ea5e510ce057abe = L.marker(
+                [32.35, -97.41],
+                {}
+            ).addTo(map_e4478e14186a49469105f51d077eeb5d);
+        
+    
+        var popup_6d0ddecc06074bb5a876a367e231f2ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_196a9ee3dcdd4fae96de0664ccc08336 = $(`<div id="html_196a9ee3dcdd4fae96de0664ccc08336" style="width: 100.0%; height: 100.0%;">Johnson County. Cases: 15800</div>`)[0];
+            popup_6d0ddecc06074bb5a876a367e231f2ed.setContent(html_196a9ee3dcdd4fae96de0664ccc08336);
+        
+
+        marker_d18d14b50ef24ce68ea5e510ce057abe.bindPopup(popup_6d0ddecc06074bb5a876a367e231f2ed)
+        ;
+
+        
+    
+    
+            var marker_c6b45c9e644742e9ad330da871aff7de = L.marker(
+                [32.42, -96.67],
+                {}
+            ).addTo(map_e4478e14186a49469105f51d077eeb5d);
+        
+    
+        var popup_698b87c6ce3c48adb39e9ff37d604063 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4318aa4b4ed847478fe220115b21ba5c = $(`<div id="html_4318aa4b4ed847478fe220115b21ba5c" style="width: 100.0%; height: 100.0%;">Ellis County. Cases: 18139</div>`)[0];
+            popup_698b87c6ce3c48adb39e9ff37d604063.setContent(html_4318aa4b4ed847478fe220115b21ba5c);
+        
+
+        marker_c6b45c9e644742e9ad330da871aff7de.bindPopup(popup_698b87c6ce3c48adb39e9ff37d604063)
+        ;
+
+        
+    
+    
+            var marker_36c07e14cf604297b9d2d70bfb8393bd = L.marker(
+                [32.73, -96.29],
+                {}
+            ).addTo(map_e4478e14186a49469105f51d077eeb5d);
+        
+    
+        var popup_8a7eb105458c4882a29f5e998345820d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d231bd2e6a574bd286d64436267e305a = $(`<div id="html_d231bd2e6a574bd286d64436267e305a" style="width: 100.0%; height: 100.0%;">Kaufman County. Cases: 12688</div>`)[0];
+            popup_8a7eb105458c4882a29f5e998345820d.setContent(html_d231bd2e6a574bd286d64436267e305a);
+        
+
+        marker_36c07e14cf604297b9d2d70bfb8393bd.bindPopup(popup_8a7eb105458c4882a29f5e998345820d)
+        ;
+
+        
+    
+    
+            var marker_8ef2bf4cf08d41fb959965f689dc3900 = L.marker(
+                [32.92, -96.44],
+                {}
+            ).addTo(map_e4478e14186a49469105f51d077eeb5d);
+        
+    
+        var popup_33d5d9c5d719499590dbe66bf7981d08 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0408bc1b9843402e9ee629ac0bcde8e9 = $(`<div id="html_0408bc1b9843402e9ee629ac0bcde8e9" style="width: 100.0%; height: 100.0%;">Rockwall County. Cases: 9082</div>`)[0];
+            popup_33d5d9c5d719499590dbe66bf7981d08.setContent(html_0408bc1b9843402e9ee629ac0bcde8e9);
+        
+
+        marker_8ef2bf4cf08d41fb959965f689dc3900.bindPopup(popup_33d5d9c5d719499590dbe66bf7981d08)
+        ;
+
+        
+    
+    
+            var marker_3346868d1428467bb65f7d199843034a = L.marker(
+                [32.79, -96.77],
+                {}
+            ).addTo(map_e4478e14186a49469105f51d077eeb5d);
+        
+    
+        var popup_f414b0f11b1041b4b42e7fd3c9d95d19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49937fa5103a472ba36c889ada9f627d = $(`<div id="html_49937fa5103a472ba36c889ada9f627d" style="width: 100.0%; height: 100.0%;">Dallas County. Cases: 252047</div>`)[0];
+            popup_f414b0f11b1041b4b42e7fd3c9d95d19.setContent(html_49937fa5103a472ba36c889ada9f627d);
+        
+
+        marker_3346868d1428467bb65f7d199843034a.bindPopup(popup_f414b0f11b1041b4b42e7fd3c9d95d19)
+        ;
+
+        
+    
+    
+            var marker_b4c92936d6424a439c73d194212451a0 = L.marker(
+                [32.78, -97.35],
+                {}
+            ).addTo(map_e4478e14186a49469105f51d077eeb5d);
+        
+    
+        var popup_51a080285a3f4bf18d39ec901bbd48be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f75a01cdcd8447f8b36d1a5201392792 = $(`<div id="html_f75a01cdcd8447f8b36d1a5201392792" style="width: 100.0%; height: 100.0%;">Tarrant County. Cases: 211076</div>`)[0];
+            popup_51a080285a3f4bf18d39ec901bbd48be.setContent(html_f75a01cdcd8447f8b36d1a5201392792);
+        
+
+        marker_b4c92936d6424a439c73d194212451a0.bindPopup(popup_51a080285a3f4bf18d39ec901bbd48be)
+        ;
+
+        
+    
+</script></body></html>
