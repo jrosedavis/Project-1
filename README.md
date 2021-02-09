@@ -90,6 +90,8 @@ By: Jason Sheridan, Anna Sours, Jenni Davis, Austin Olea, & Mark Blankenship
     * Lists of coordinates...
     * Lists of cities...
     * LISTS!
+![CA_counties.png](Image/CA_counties.png?raw=ture “Title”)
+
 
 ### Home Values of Counties with high COVID-19 Cases
 #### California
