@@ -75,7 +75,7 @@ By: Jason Sheridan, Anna Sours, Jenni Davis, Austin Olea, & Mark Blankenship
   
   
 #### Analysis 3: 
-##### More mapping…?
+##### More mappingâ€¦?
   * Q: Can we use heat maps and markers to better highlight the counties with maximum cases and their surrounding counties?
 
 ##### Exploration & Data Wrangling: 
@@ -90,8 +90,11 @@ By: Jason Sheridan, Anna Sours, Jenni Davis, Austin Olea, & Mark Blankenship
     * Lists of coordinates...
     * Lists of cities...
     * LISTS!
-![CA_counties.png](Image/CA_counties.png?raw=ture “Title”)
 
+![CA_counties.png](https://github.com/jrosedavis/Project-1/blob/main/Image/CA_counties.PNG?raw=true)
+![TX_Dallasmetrocounties.png](https://github.com/jrosedavis/Project-1/blob/main/Image/TX_Dallasmetrocounties.PNG?raw=true)
+![TX_Houstonmetrocounties.png](https://github.com/jrosedavis/Project-1/blob/main/Image/TX_Houstonmetrocounties.PNG?raw=true)
+![FL_counties.png](https://github.com/jrosedavis/Project-1/blob/main/Image/FL_counties.PNG?raw=true)
 
 ### Home Values of Counties with high COVID-19 Cases
 #### California
