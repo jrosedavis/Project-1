@@ -1,6 +1,6 @@
 ## Project 1: Home Value Patterns Due to COVID-19
 
-By: Jason Sheridan, Anna Sours, Jenni Davis, Austin Olea, & Mark Blankenship
+By: Jenni Davis, Jason Sheridan, Anna Sours, Austin Olea, & Mark Blankenship
 
 
 ### Hypothesis: Where COVID-19 cases are higher in counties with major cities, home values will increase in the surrounding counties.
